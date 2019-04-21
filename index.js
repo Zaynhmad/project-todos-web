@@ -20,11 +20,23 @@ const newTodoList = () => {
   li.appendChild(span)
 }
 
-// Activate todo-list style that already done
+// Activate todo-list line-through style
 
 const list = document.querySelector('ul')
-list.addEventListener('click', function () {
-  if (target.tagName === 'LI') {
-    target.classList.toggle('checked')
+list.addEventListener('click', function (done) {
+  if (done.target.tagName === 'LI') {
+    done.target.classList.toggle('checked')
   }
 })
+
+// Give deleteButton to todo-list that already exist
+
+let myTodolist = document.getElementsByTagName("LI");
+let i;
+for (i = 0; i < myTodolist.length; i++) {
+  let span = document.createElement("span");
+  let deleteButton = document.createTextNode("\u00D7");
+  span.className = "close";
+  span.appendChild(deleteButton);
+  myTodolist[i].appendChild(span);
+}
