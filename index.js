@@ -19,25 +19,7 @@ const newTodoList = () => {
   span.appendChild(deleteButton)
   li.appendChild(span)
 
-  // for (let index = 0; index < close.length; index++) {
-  //   close[index].onclick = function () {
-  //     let parent = this.parentElement
-  //     parent.style.display = "none;"
-  //   }
-  // }
-
 }
-
-// const close = document.getElementsByClassName("delete")
-// for (let index = 0; index < close.length; index++) {
-//   close[index].onclick = function () {
-//     let parent = this.parentElement
-//     parent.style.display = "none;"
-//   }
-// }
-
-
-
 
 // Activate todo-list line-through style
 
