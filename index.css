@@ -87,19 +87,3 @@ ul li:nth-last-child(1) {
 ul li.done {
   text-decoration: line-through;
 }
-
-.delete {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 12px 40px;
-}
-
-.delete:hover {
-  background-color: #0619c0;
-  color: white;
-}
-
-ul li:nth-last-child(1) .delete {
-  border-bottom-right-radius: 20px;
-}
