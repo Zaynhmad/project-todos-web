@@ -84,22 +84,22 @@ ul li:nth-last-child(1) {
   border-bottom-right-radius: 20px;
 }
 
-ul li.checked {
+ul li.done {
   text-decoration: line-through;
 }
 
-.close {
+.delete {
   position: absolute;
   right: 0;
   top: 0;
   padding: 12px 40px;
 }
 
-.close:hover {
+.delete:hover {
   background-color: #0619c0;
   color: white;
 }
 
-ul li:nth-last-child(1) .close {
+ul li:nth-last-child(1) .delete {
   border-bottom-right-radius: 20px;
 }
